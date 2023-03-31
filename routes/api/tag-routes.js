@@ -44,7 +44,7 @@ router.get('/:id', async(req, res) => {
       
     if (!tagInfo) {
 
-      res.status(404).json({message:'Based on id, no tag was found.'});
+      res.status(404).json({message:'Based on id provided, not found.'});
 
       return;
     
@@ -74,7 +74,7 @@ router.post('/', async(req, res) => {
 
     if (!tagInfo[0]) {
 
-      res.status(404).json({message:'Based on id, no tag was found.'});
+      res.status(404).json({message:'Based on id provided, not found.'});
       
       return;
 
@@ -104,7 +104,7 @@ router.put('/:id', async(req, res) => {
 
     if (!tagInfo[0]) {
 
-      res.status(404).json({message:'Based on id, no tag was found.'});
+      res.status(404).json({message:'Based on id provided, not found.'});
 
       return;
 
@@ -134,13 +134,13 @@ router.delete('/:id', async(req, res) => {
 
     if (!tagInfo) {
 
-      res.status(404).json({message:'Based on id, no tag was found.'});
+      res.status(404).json({message:'Based on id provided, not found.'});
 
       return;
 
     }
 
-    res.status(200).json('The tag has been removed.');
+    res.status(200).json('Based on id provided, not found.');
 
   } catch (err) {
 

@@ -44,7 +44,7 @@ router.get('/:id', async(req, res) => {
 
     if (!categoryInfo) { 
 
-      res.status(404).json({message: 'Based on id, category was not found.'});
+      res.status(404).json({message: 'Based on id provided, not found.'});
 
       return;
 
@@ -92,7 +92,7 @@ router.put('/:id', async(req, res) => {
 
     if (!categoryInfo[0]) {
 
-      res.status(404).json({message: 'Based on id, category was not found.'});
+      res.status(404).json({message: 'Based on id provided, not found.'});
 
       return;
 
@@ -124,7 +124,7 @@ router.delete('/:id', async(req, res) => {
 
     if (!categoryInfo) {
 
-      res.status(404).json({message: 'Based on id, no trip was found.'});
+      res.status(404).json({message: 'Based on id provided, not found.'});
 
       return;
     }

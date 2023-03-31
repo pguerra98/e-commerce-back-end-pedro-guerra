@@ -48,7 +48,7 @@ router.get('/:id', async(req, res) => {
 
     if (!productInfo) {
 
-      res.status(404).json({message: 'Based on id, product was not found.'});
+      res.status(404).json({message: 'Based on id provided, not found.'});
 
       return;
 
@@ -219,7 +219,7 @@ router.delete('/:id', async(req, res) => {
 
     if (!productInfo) {
 
-      res.status(404).json({message: 'Based on id, no product was found.'});
+      res.status(404).json({message: 'Based on id provided, not found.'});
       
       return;
 

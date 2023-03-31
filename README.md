@@ -15,7 +15,7 @@ in order to allow the application to fully work.
 
 This challenged allowed me to improve my JavaScript, Express & MySQL coding skills. This back end application will allow an user to see the back end for an e-commerce site through an Express.js API. 
 
-<a href="">Walkthrough Video Link</a>
+<a href="https://drive.google.com/file/d/1TTvtvQIPXkI04UoWMabSB0wGh9J-soZY/view">Walkthrough Video Link</a>
 
 ## Credits
 
